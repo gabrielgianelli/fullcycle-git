@@ -17,11 +17,17 @@
   },
   "homepage": "https://github.com/gabrielgianelli/fullcycle-git#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
